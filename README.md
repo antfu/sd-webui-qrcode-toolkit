@@ -2,6 +2,8 @@
 
 Extension for AUTOMATIC1111's [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui), provides integration with [Anthony's QR Toolkit](https://github.com/antfu/qrcode-toolkit) for easy image sending.
 
+<img width="1074" alt="Screenshot" src="https://github.com/antfu/sd-webui-qrcode-toolkit/assets/11247099/d19b6cc8-e2e9-499e-b538-d5c0510942ce">
+
 ## Installation
 
 1. Open `Extensions` tab.
