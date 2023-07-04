@@ -97,6 +97,9 @@
       }
 
       switch (json.event) {
+        case 'init':
+          qrtoolkitInit()
+          break
         case 'setControlNet':
           gotoTab('img2img')
           gotoTab('Inpaint', 'mode_img2img')
@@ -126,7 +129,8 @@
     }
   })
 
-  setTimeout(qrtoolkitInit, 1000)
+  setTimeout(qrtoolkitInit, 1_000)
+  setTimeout(qrtoolkitInit, 10_000)
 
   async function qrtoolkitSendImage() {
     let image
