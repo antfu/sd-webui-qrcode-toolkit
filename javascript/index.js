@@ -145,6 +145,20 @@
     }
   }
 
+  async function qrtoolkitSendScanner() {
+    let image
+    try {
+      image = await getImageFromGallery()
+    } catch (error) {
+      console.log(error)
+    }
+    if (image) {
+      gotoTab('QR Toolkit')
+      sendMessage('setScannerImage', image)
+    }
+  }
+
   window.qrtoolkitInit = qrtoolkitInit
   window.qrtoolkitSendImage = qrtoolkitSendImage
+  window.qrtoolkitSendScanner = qrtoolkitSendScanner
 })()
